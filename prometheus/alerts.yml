@@ -1,0 +1,20 @@
+groups:
+  - name: EasyCasualBridgeAlerts
+    rules:
+      - alert: HighBridgeLatency
+        expr: histogram_quantile(0.95, sum by (le) (rate(bridge_relay_duration_seconds_bucket[5m]))) > 5
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High bridge relay latency (P95 > 5s)"
+          description: "The group messages bridge is experiencing high latency in relaying messages."
+
+      - alert: BridgeDown
+        expr: up{job="bpf-groups-bridge"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Group Messages Bridge is down"
+          description: "Prometheus cannot scrape the group-messages-bridge service."
