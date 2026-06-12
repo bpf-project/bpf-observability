@@ -17,16 +17,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Get or create EasyCasual folder
+      - name: Get EasyCasual folder
         id: folder
         env:
           GH_TOKEN: ${{ secrets.GRAFANA_API_TOKEN }}
         run: |
+          # The EasyCasual folder is provisioned by Grafana file provisioning.
+          # Find it by UID (set in dashboards.yml folderUid: 'easycasual')
           FOLDER_ID=$(curl -s -H "Authorization: Bearer $GH_TOKEN" \
             "$GRAFANA_URL/api/folders" | \
-            jq -r '.[] | select(.title=="EasyCasual") | .id')
+            jq -r '.[] | select(.uid=="easycasual") | .id')
           if [ -z "$FOLDER_ID" ] || [ "$FOLDER_ID" = "null" ]; then
-            echo "Creating EasyCasual folder..."
+            echo "Creating EasyCasual folder (provisioning may not have run yet)..."
             RESULT=$(curl -s -X POST \
               -H "Authorization: Bearer $GH_TOKEN" \
               -H "Content-Type: application/json" \
