@@ -1,0 +1,57 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'dashboards/**'
+  workflow_dispatch:
+
+env:
+  GRAFANA_URL: https://grafana-ai.fresno.ar
+
+jobs:
+  deploy-dashboards:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get or create EasyCasual folder
+        id: folder
+        env:
+          GH_TOKEN: ${{ secrets.GRAFANA_API_TOKEN }}
+        run: |
+          FOLDER_ID=$(curl -s -H "Authorization: Bearer $GH_TOKEN" \
+            "$GRAFANA_URL/api/folders" | \
+            jq -r '.[] | select(.title=="EasyCasual") | .id')
+          if [ -z "$FOLDER_ID" ] || [ "$FOLDER_ID" = "null" ]; then
+            echo "Creating EasyCasual folder..."
+            RESULT=$(curl -s -X POST \
+              -H "Authorization: Bearer $GH_TOKEN" \
+              -H "Content-Type: application/json" \
+              -d '{"name":"EasyCasual","uid":"easycasual"}' \
+              "$GRAFANA_URL/api/folders")
+            FOLDER_ID=$(echo "$RESULT" | jq .id)
+          fi
+          echo "id=$FOLDER_ID" >> "$GITHUB_OUTPUT"
+
+      - name: Import dashboards
+        env:
+          GH_TOKEN: ${{ secrets.GRAFANA_API_TOKEN }}
+        run: |
+          for f in dashboards/*.json; do
+            [ -f "$f" ] || continue
+            echo "Importing $(basename "$f")..."
+            curl -s -X POST \
+              -H "Authorization: Bearer $GH_TOKEN" \
+              -H "Content-Type: application/json" \
+              -d "$(jq -n \
+                --argjson d "$(cat "$f")" \
+                --argjson fid "${{ steps.folder.outputs.id }}" \
+                '{"dashboard":$d,"folderId":$fid,"overwrite":true}')" \
+              "$GRAFANA_URL/api/dashboards/db" | jq .message
+          done
+
+# Alert rules in prometheus/ are deployed via cron job on 192.168.1.58
+# that runs ~/server-monitoring/scripts/pull-observability-alerts.sh every 5 min.
