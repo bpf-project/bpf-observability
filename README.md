@@ -7,6 +7,7 @@ This repository contains the observability configuration (dashboards, alerts, et
 - **/dashboards**: Grafana dashboard JSON files.
   - [EasyCasual - Group Messages Bridge](./dashboards/easycasual-bridge.json)
   - [EasyCasual - Backend Funnel & Product Metrics](./dashboards/easycasual-backend-funnel.json)
+  - [EasyCasual - Backend HTTP Errors](./dashboards/easycasual-backend-http-errors.json)
 - **/prometheus**: Prometheus alerting rules and recording rules.
   - [Bridge Alerts](./prometheus/alerts.yml)
 
@@ -46,3 +47,11 @@ Monitoring for the `bpf-application` backend and the product funnel events it re
 - **Activation**: Login, signup, search, and payment page views; new users created; first posts created; and next-day returning logins.
 - **Latency**: OTP send/verify p95, post creation p95, and search p95 grouped by the main request dimensions.
 - **Runtime**: Backend memory, CPU, event-loop lag, active handles, and active requests.
+
+### EasyCasual - Backend HTTP Errors
+
+Monitoring for HTTP response codes emitted by the backend APIs.
+- **Overview**: 4xx, 5xx, total responses, and 429 rate.
+- **Errors by API Group**: Error rate split by major backend API surface.
+- **Top Error Routes**: Highest-error routes across the backend.
+- **Status Codes**: Error rate grouped by exact HTTP status code.
