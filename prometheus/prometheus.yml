@@ -1,0 +1,16 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'bpf-groups-bridge'
+    scrape_interval: 30s
+    static_configs:
+      - targets: ['127.0.0.1:3462']
+  - job_name: 'bpf-application-backend'
+    scrape_interval: 30s
+    metrics_path: /api/metrics
+    static_configs:
+      - targets: ['127.0.0.1:3567']
+
+remote_write:
+  - url: 'http://127.0.0.1:9090/api/v1/write'
