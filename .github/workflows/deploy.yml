@@ -5,6 +5,9 @@ on:
     branches: [main]
     paths:
       - 'dashboards/**'
+      - 'prometheus/**'
+      - 'scripts/**'
+      - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
 env:
@@ -24,16 +27,30 @@ jobs:
         run: |
           # The EasyCasual folder is provisioned by Grafana file provisioning.
           # Find it by UID (set in dashboards.yml folderUid: 'easycasual')
-          FOLDER_ID=$(curl -s -H "Authorization: Bearer $GH_TOKEN" \
-            "$GRAFANA_URL/api/folders" | \
-            jq -r '.[] | select(.uid=="easycasual") | .id')
+          # Using -k because of SSL issues with the internal Grafana URL.
+          RESPONSE=$(curl -s -k -H "Authorization: Bearer $GH_TOKEN" "$GRAFANA_URL/api/folders")
+          
+          # Check if RESPONSE is a valid JSON array
+          if ! echo "$RESPONSE" | jq -e 'if type == "array" then . else empty end' > /dev/null 2>&1; then
+            echo "Error: Unexpected response from Grafana API: $RESPONSE"
+            exit 1
+          fi
+
+          FOLDER_ID=$(echo "$RESPONSE" | jq -r '.[] | select(.uid=="easycasual") | .id')
+          
           if [ -z "$FOLDER_ID" ] || [ "$FOLDER_ID" = "null" ]; then
             echo "Creating EasyCasual folder (provisioning may not have run yet)..."
-            RESULT=$(curl -s -X POST \
+            RESULT=$(curl -s -k -X POST \
               -H "Authorization: Bearer $GH_TOKEN" \
               -H "Content-Type: application/json" \
               -d '{"name":"EasyCasual","uid":"easycasual"}' \
               "$GRAFANA_URL/api/folders")
+            
+            # Check for creation error
+            if echo "$RESULT" | jq -e '.id == null' > /dev/null 2>&1; then
+              echo "Error creating folder: $RESULT"
+              exit 1
+            fi
             FOLDER_ID=$(echo "$RESULT" | jq .id)
           fi
           echo "id=$FOLDER_ID" >> "$GITHUB_OUTPUT"
@@ -45,14 +62,16 @@ jobs:
           for f in dashboards/*.json; do
             [ -f "$f" ] || continue
             echo "Importing $(basename "$f")..."
-            curl -s -X POST \
-              -H "Authorization: Bearer $GH_TOKEN" \
-              -H "Content-Type: application/json" \
-              -d "$(jq -n \
+            PAYLOAD=$(jq -n \
                 --argjson d "$(cat "$f")" \
                 --argjson fid "${{ steps.folder.outputs.id }}" \
-                '{"dashboard":$d,"folderId":$fid,"overwrite":true}')" \
-              "$GRAFANA_URL/api/dashboards/db" | jq .message
+                '{"dashboard":$d,"folderId":$fid,"overwrite":true}')
+            
+            curl -s -k -X POST \
+              -H "Authorization: Bearer $GH_TOKEN" \
+              -H "Content-Type: application/json" \
+              -d "$PAYLOAD" \
+              "$GRAFANA_URL/api/dashboards/db" | jq -r '"Result: \(.message // "OK")"'
           done
 
 # Alert rules in prometheus/ are deployed via cron job on 192.168.1.58
