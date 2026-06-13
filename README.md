@@ -42,6 +42,7 @@ Monitoring for the `group-messages-bridge` service.
 
 Monitoring for the `bpf-application` backend and the product funnel events it receives.
 - **Overview**: Backend health, product event rate, contact-click rate, and reported active-usage averages.
-- **Product Funnel**: Events by type, contact clicks by method, acquisition and activation events, and monetization-intent events.
+- **Product Funnel**: Events by type, contact clicks by method and source, acquisition and activation events, and monetization-intent events.
+- **Activation**: Login, signup, search, and payment page views; new users created; first posts created; and next-day returning logins.
 - **Latency**: OTP send/verify p95, post creation p95, and search p95 grouped by the main request dimensions.
 - **Runtime**: Backend memory, CPU, event-loop lag, active handles, and active requests.
