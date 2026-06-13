@@ -33,6 +33,7 @@ rule_files:
 Monitoring for the `group-messages-bridge` service.
 - **Overview**: Service health, configured groups, message cache size, and process start time.
 - **Messages**: Detected, published, omitted, publish ratio, message rates, and omitted reasons.
+- **HTTP Errors**: 4xx/5xx/429 response rates plus top error routes.
 - **Relay**: Relay request rate, duration count/sum, and latency quantiles.
 - **Process**: CPU, resident/virtual/heap memory, and file descriptors.
 - **Node.js Runtime**: Heap totals, heap spaces, active resources, handles, requests, and version info.
