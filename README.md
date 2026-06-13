@@ -30,5 +30,9 @@ rule_files:
 ### EasyCasual - Group Messages Bridge
 
 Monitoring for the `group-messages-bridge` service.
-- **Message Detection Rate**: Rate of new messages detected in WhatsApp groups.
-- **Relay Latency (P95)**: 95th percentile of the time taken to relay messages to the backend.
+- **Overview**: Service health, configured groups, message cache size, and process start time.
+- **Messages**: Detected, published, omitted, publish ratio, message rates, and omitted reasons.
+- **Relay**: Relay request rate, duration count/sum, and latency quantiles.
+- **Process**: CPU, resident/virtual/heap memory, and file descriptors.
+- **Node.js Runtime**: Heap totals, heap spaces, active resources, handles, requests, and version info.
+- **Event Loop and GC**: Event loop lag summaries/percentiles and garbage collection rates/durations.
