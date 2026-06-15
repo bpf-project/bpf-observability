@@ -25,8 +25,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GRAFANA_API_TOKEN }}
         run: |
-          # The EasyCasual folder is provisioned by Grafana file provisioning.
-          # Find it by UID (set in dashboards.yml folderUid: 'easycasual')
+          # The EasyCasual folder is created here if it does not exist.
           # Using -k because of SSL issues with the internal Grafana URL.
           RESPONSE=$(curl -s -k -H "Authorization: Bearer $GH_TOKEN" "$GRAFANA_URL/api/folders")
           
@@ -62,11 +61,12 @@ jobs:
           for f in dashboards/*.json; do
             [ -f "$f" ] || continue
             echo "Importing $(basename "$f")..."
+            # Fix datasource: replace template variable ${datasource} with our actual UID
+            FIXED=$(sed 's/"uid": "\${datasource}"/"uid": "prometheus-scrapper"/g' "$f")
             PAYLOAD=$(jq -n \
-                --argjson d "$(cat "$f")" \
+                --argjson d "$FIXED" \
                 --argjson fid "${{ steps.folder.outputs.id }}" \
                 '{"dashboard":$d,"folderId":$fid,"overwrite":true}')
-            
             curl -s -k -X POST \
               -H "Authorization: Bearer $GH_TOKEN" \
               -H "Content-Type: application/json" \
@@ -74,5 +74,6 @@ jobs:
               "$GRAFANA_URL/api/dashboards/db" | jq -r '"Result: \(.message // "OK")"'
           done
 
-# Alert rules in prometheus/ are deployed via cron job on 192.168.1.58
-# that runs ~/server-monitoring/scripts/pull-observability-alerts.sh every 5 min.
+# Alert rules in prometheus/ are NOT deployed by this workflow.
+# They require file-based provisioning on the Prometheus server.
+# Deploy them via a cron job or manual sync to the Prometheus host.
