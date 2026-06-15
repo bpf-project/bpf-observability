@@ -8,8 +8,21 @@ This repository contains the observability configuration (dashboards, alerts, et
   - [EasyCasual - Group Messages Bridge](./dashboards/easycasual-bridge.json)
   - [EasyCasual - Backend Funnel & Product Metrics](./dashboards/easycasual-backend-funnel.json)
   - [EasyCasual - Backend HTTP Errors](./dashboards/easycasual-backend-http-errors.json)
-- **/prometheus**: Prometheus alerting rules and recording rules.
+- **/prometheus**: Prometheus configuration and alerting rules.
+  - [Federation Scrape Config](./prometheus/prometheus.yml)
   - [Bridge Alerts](./prometheus/alerts.yml)
+- **/docs**: Architecture and operational documentation.
+  - [Observability Architecture](./docs/architecture.md)
+
+## Architecture
+
+The Cloud Server runs a Prometheus **Federation Server** that scrapes the backend and bridge metrics and re-exposes them via `/federate`. The On-prem central Prometheus scrapes this federation endpoint through a rathole bidirectional tunnel.
+
+```
+Backend & Bridge (Cloud Server) → Prometheus Federation Server → Rathole Tunnel → Central Prometheus (On-prem) → Grafana
+```
+
+See [docs/architecture.md](./docs/architecture.md) for the full diagram and rathole tunnel details.
 
 ## Setup
 
@@ -25,6 +38,19 @@ Include the `prometheus/alerts.yml` in your Prometheus server configuration:
 \`\`\`yaml
 rule_files:
   - "alerts.yml"
+\`\`\`
+
+For the federation scrape job, use the config in `prometheus/prometheus.yml`:
+
+\`\`\`yaml
+scrape_configs:
+  - job_name: 'bpf-cloud-agent'
+    metrics_path: /federate
+    params:
+      match[]:
+        - '{__name__=~".+"}'
+    static_configs:
+      - targets: ['host.docker.internal:19091']  # via rathole tunnel
 \`\`\`
 
 ## Dashboards
