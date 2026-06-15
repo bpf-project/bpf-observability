@@ -25,8 +25,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GRAFANA_API_TOKEN }}
         run: |
-          # The EasyCasual folder is provisioned by Grafana file provisioning.
-          # Find it by UID (set in dashboards.yml folderUid: 'easycasual')
+          # Find the EasyCasual folder by UID and create it if missing.
           # Using -k because of SSL issues with the internal Grafana URL.
           RESPONSE=$(curl -s -k -H "Authorization: Bearer $GH_TOKEN" "$GRAFANA_URL/api/folders")
           
@@ -62,8 +61,12 @@ jobs:
           for f in dashboards/*.json; do
             [ -f "$f" ] || continue
             echo "Importing $(basename "$f")..."
+            # Replace the ${datasource} template variable with our actual datasource UID.
+            # Grafana's import API does not resolve template variables, so panels would
+            # show "data source not found" without this fix.
+            FIXED=$(sed 's/"uid": "\${datasource}"/"uid": "prometheus-scrapper"/g' "$f")
             PAYLOAD=$(jq -n \
-                --argjson d "$(cat "$f")" \
+                --argjson d "$FIXED" \
                 --argjson fid "${{ steps.folder.outputs.id }}" \
                 '{"dashboard":$d,"folderId":$fid,"overwrite":true}')
             
@@ -74,5 +77,6 @@ jobs:
               "$GRAFANA_URL/api/dashboards/db" | jq -r '"Result: \(.message // "OK")"'
           done
 
-# Alert rules in prometheus/ are deployed via cron job on 192.168.1.58
-# that runs ~/server-monitoring/scripts/pull-observability-alerts.sh every 5 min.
+# Alert rules in prometheus/ are not deployed by this workflow.
+# Prometheus requires file-based rule provisioning — deploy them manually
+# or via a cron job on the Prometheus host.
