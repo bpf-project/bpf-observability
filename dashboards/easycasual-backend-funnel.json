@@ -63,7 +63,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "up{job=\"bpf-application-backend\"}",
+          "expr": "up{job=\"bpf-application-backend\", instance=\"backend:3000\"}",
           "instant": true,
           "legendFormat": "{{instance}}",
           "range": false,
@@ -71,97 +71,39 @@
         }
       ],
       "title": "Backend Up",
-      "type": "stat"
-    },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "${datasource}"
-      },
-      "gridPos": {
-        "h": 4,
-        "w": 4,
-        "x": 4,
-        "y": 0
-      },
-      "id": 2,
-      "options": {
-        "colorMode": "value",
-        "graphMode": "line",
-        "justifyMode": "auto",
-        "orientation": "auto",
-        "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
-          "fields": "",
-          "values": false
-        },
-        "showPercentChange": false,
-        "textMode": "auto",
-        "wideLayout": true
-      },
-      "targets": [
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${datasource}"
+      "type": "stat",
+      "fieldConfig": {
+        "defaults": {
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "red",
+                "value": null
+              },
+              {
+                "color": "green",
+                "value": 1
+              }
+            ]
           },
-          "editorMode": "code",
-          "expr": "sum(rate(easycasual_backend_product_events_total[$__rate_interval])) or vector(0)",
-          "instant": true,
-          "legendFormat": "events/sec",
-          "range": false,
-          "refId": "A"
+          "mappings": [
+            {
+              "options": {
+                "0": {
+                  "color": "red",
+                  "text": "DOWN"
+                },
+                "1": {
+                  "color": "green",
+                  "text": "UP"
+                }
+              },
+              "type": "value"
+            }
+          ]
         }
-      ],
-      "title": "Product Events Now",
-      "type": "stat"
-    },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "${datasource}"
-      },
-      "gridPos": {
-        "h": 4,
-        "w": 4,
-        "x": 8,
-        "y": 0
-      },
-      "id": 3,
-      "options": {
-        "colorMode": "value",
-        "graphMode": "line",
-        "justifyMode": "auto",
-        "orientation": "auto",
-        "reduceOptions": {
-          "calcs": [
-            "lastNotNull"
-          ],
-          "fields": "",
-          "values": false
-        },
-        "showPercentChange": false,
-        "textMode": "auto",
-        "wideLayout": true
-      },
-      "targets": [
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${datasource}"
-          },
-          "editorMode": "code",
-          "expr": "sum(rate(easycasual_backend_product_events_total{event=\"click_contact\"}[$__rate_interval])) or vector(0)",
-          "instant": true,
-          "legendFormat": "contact clicks/sec",
-          "range": false,
-          "refId": "A"
-        }
-      ],
-      "title": "Contact Clicks Now",
-      "type": "stat"
+      }
     },
     {
       "datasource": {
@@ -198,7 +140,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "(sum(rate(easycasual_backend_active_usage_reported_seconds_sum[$__rate_interval])) / clamp_min(sum(rate(easycasual_backend_active_usage_reported_seconds_count[$__rate_interval])), 1)) or vector(0)",
+          "expr": "(sum(rate(easycasual_backend_active_usage_reported_seconds_sum{job=\"bpf-application-backend\"}[$__rate_interval])) / clamp_min(sum(rate(easycasual_backend_active_usage_reported_seconds_count[$__rate_interval])), 1)) or vector(0)",
           "instant": true,
           "legendFormat": "seconds",
           "range": false,
@@ -207,114 +149,6 @@
       ],
       "title": "Active Usage Avg Chunk",
       "type": "stat"
-    },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "${datasource}"
-      },
-      "gridPos": {
-        "h": 6,
-        "w": 12,
-        "x": 0,
-        "y": 4
-      },
-      "id": 5,
-      "targets": [
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${datasource}"
-          },
-          "editorMode": "code",
-          "expr": "sum by (event) (rate(easycasual_backend_product_events_total[$__rate_interval]))",
-          "legendFormat": "{{event}}",
-          "refId": "A"
-        }
-      ],
-      "title": "Product Events by Event",
-      "type": "timeseries"
-    },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "${datasource}"
-      },
-      "gridPos": {
-        "h": 6,
-        "w": 12,
-        "x": 12,
-        "y": 4
-      },
-      "id": 6,
-      "targets": [
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${datasource}"
-          },
-          "editorMode": "code",
-          "expr": "sum by (method) (rate(easycasual_backend_product_events_total{event=\"click_contact\"}[$__rate_interval]))",
-          "legendFormat": "{{method}}",
-          "refId": "A"
-        }
-      ],
-      "title": "Contact Clicks by Method",
-      "type": "timeseries"
-    },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "${datasource}"
-      },
-      "gridPos": {
-        "h": 6,
-        "w": 12,
-        "x": 0,
-        "y": 10
-      },
-      "id": 7,
-      "targets": [
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${datasource}"
-          },
-          "editorMode": "code",
-          "expr": "sum by (event) (rate(easycasual_backend_product_events_total{event=~\"login|signup|create_post|search_used\"}[$__rate_interval]))",
-          "legendFormat": "{{event}}",
-          "refId": "A"
-        }
-      ],
-      "title": "Acquisition and Activation",
-      "type": "timeseries"
-    },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "${datasource}"
-      },
-      "gridPos": {
-        "h": 6,
-        "w": 12,
-        "x": 12,
-        "y": 10
-      },
-      "id": 8,
-      "targets": [
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${datasource}"
-          },
-          "editorMode": "code",
-          "expr": "sum by (event) (rate(easycasual_backend_product_events_total{event=~\"click_boost_post|premium_click|payment_started\"}[$__rate_interval]))",
-          "legendFormat": "{{event}}",
-          "refId": "A"
-        }
-      ],
-      "title": "Monetization Intent",
-      "type": "timeseries"
     },
     {
       "datasource": {
@@ -335,7 +169,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "histogram_quantile(0.95, sum by (le, step) (rate(easycasual_backend_auth_otp_duration_seconds_bucket[$__rate_interval]))) or vector(0)",
+          "expr": "histogram_quantile(0.95, sum by (le, step) (rate(easycasual_backend_auth_otp_duration_seconds_bucket{job=\"bpf-application-backend\"}[$__rate_interval]))) or vector(0)",
           "legendFormat": "{{step}}",
           "refId": "A"
         }
@@ -362,7 +196,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "histogram_quantile(0.95, sum by (le, category) (rate(easycasual_backend_posts_create_duration_seconds_bucket[$__rate_interval]))) or vector(0)",
+          "expr": "histogram_quantile(0.95, sum by (le, category) (rate(easycasual_backend_posts_create_duration_seconds_bucket{job=\"bpf-application-backend\"}[$__rate_interval]))) or vector(0)",
           "legendFormat": "{{category}}",
           "refId": "A"
         }
@@ -389,7 +223,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "histogram_quantile(0.95, sum by (le, contact_type) (rate(easycasual_backend_posts_create_duration_seconds_bucket[$__rate_interval]))) or vector(0)",
+          "expr": "histogram_quantile(0.95, sum by (le, contact_type) (rate(easycasual_backend_posts_create_duration_seconds_bucket{job=\"bpf-application-backend\"}[$__rate_interval]))) or vector(0)",
           "legendFormat": "{{contact_type}}",
           "refId": "A"
         }
@@ -416,7 +250,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "histogram_quantile(0.95, sum by (le, sort) (rate(easycasual_backend_posts_search_duration_seconds_bucket[$__rate_interval]))) or vector(0)",
+          "expr": "histogram_quantile(0.95, sum by (le, sort) (rate(easycasual_backend_posts_search_duration_seconds_bucket{job=\"bpf-application-backend\"}[$__rate_interval]))) or vector(0)",
           "legendFormat": "{{sort}}",
           "refId": "A"
         }
@@ -480,7 +314,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "rate(easycasual_backend_process_cpu_seconds_total[$__rate_interval])",
+          "expr": "rate(easycasual_backend_process_cpu_seconds_total{job=\"bpf-application-backend\"}[$__rate_interval])",
           "legendFormat": "cpu seconds/sec",
           "refId": "A"
         },
@@ -526,87 +360,6 @@
       "gridPos": {
         "h": 6,
         "w": 12,
-        "x": 0,
-        "y": 34
-      },
-      "id": 15,
-      "targets": [
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${datasource}"
-          },
-          "editorMode": "code",
-          "expr": "sum by (source) (rate(easycasual_backend_product_events_total{event=\"click_post\"}[$__rate_interval]))",
-          "legendFormat": "{{source}}",
-          "refId": "A"
-        }
-      ],
-      "title": "Post Clicks by Source",
-      "type": "timeseries"
-    },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "${datasource}"
-      },
-      "gridPos": {
-        "h": 6,
-        "w": 12,
-        "x": 12,
-        "y": 34
-      },
-      "id": 16,
-      "targets": [
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${datasource}"
-          },
-          "editorMode": "code",
-          "expr": "sum by (source) (rate(easycasual_backend_product_events_total{event=\"click_contact\"}[$__rate_interval]))",
-          "legendFormat": "{{source}}",
-          "refId": "A"
-        }
-      ],
-      "title": "Contact Clicks by Source",
-      "type": "timeseries"
-    },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "${datasource}"
-      },
-      "gridPos": {
-        "h": 6,
-        "w": 12,
-        "x": 0,
-        "y": 40
-      },
-      "id": 17,
-      "targets": [
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${datasource}"
-          },
-          "editorMode": "code",
-          "expr": "sum by (event) (rate(easycasual_backend_product_events_total{event=~\"view_login_page|view_signup_page|view_search_page|view_payment_page\"}[$__rate_interval]))",
-          "legendFormat": "{{event}}",
-          "refId": "A"
-        }
-      ],
-      "title": "Page Views by Funnel Step",
-      "type": "timeseries"
-    },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "${datasource}"
-      },
-      "gridPos": {
-        "h": 6,
-        "w": 12,
         "x": 12,
         "y": 40
       },
@@ -618,7 +371,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "rate(easycasual_backend_new_users_created_total[$__rate_interval])",
+          "expr": "rate(easycasual_backend_new_users_created_total{job=\"bpf-application-backend\"}[$__rate_interval])",
           "legendFormat": "new users",
           "refId": "A"
         },
@@ -628,7 +381,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "rate(easycasual_backend_first_posts_created_total[$__rate_interval])",
+          "expr": "rate(easycasual_backend_first_posts_created_total{job=\"bpf-application-backend\"}[$__rate_interval])",
           "legendFormat": "first posts",
           "refId": "B"
         },
@@ -638,7 +391,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "rate(easycasual_backend_returning_next_day_logins_total[$__rate_interval])",
+          "expr": "rate(easycasual_backend_returning_next_day_logins_total{job=\"bpf-application-backend\"}[$__rate_interval])",
           "legendFormat": "next-day returns",
           "refId": "C"
         }
@@ -653,11 +406,22 @@
       },
       "gridPos": {
         "h": 6,
-        "w": 24,
+        "w": 12,
         "x": 0,
-        "y": 46
+        "y": 24
       },
       "id": 19,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      },
       "targets": [
         {
           "datasource": {
@@ -665,12 +429,77 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "sum by (intent) (rate(easycasual_backend_lead_intent_signals_total[$__rate_interval]))",
-          "legendFormat": "{{intent}}",
+          "expr": "sum by (route) (rate(easycasual_backend_http_responses_total{job=\"bpf-application-backend\"}[$__rate_interval]))",
+          "legendFormat": "{{route}}",
           "refId": "A"
         }
       ],
-      "title": "Lead Intent Signals",
+      "title": "API Traffic by Route",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "${datasource}"
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 12,
+        "y": 24
+      },
+      "id": 20,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${datasource}"
+          },
+          "editorMode": "code",
+          "expr": "sum by (status_code) (rate(easycasual_backend_http_responses_total{job=\"bpf-application-backend\",status_family=~\"4xx|5xx\"}[$__rate_interval]))",
+          "legendFormat": "{{status_code}}",
+          "refId": "A"
+        }
+      ],
+      "title": "HTTP Errors by Code",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "${datasource}"
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 0,
+        "y": 30
+      },
+      "id": 21,
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${datasource}"
+          },
+          "editorMode": "code",
+          "expr": "histogram_quantile(0.95, sum by (le) (rate(easycasual_backend_active_usage_reported_seconds_bucket{job=\"bpf-application-backend\"}[$__rate_interval]))) or vector(0)",
+          "legendFormat": "p95",
+          "refId": "A"
+        }
+      ],
+      "title": "Active Usage Duration p95",
       "type": "timeseries"
     }
   ],
