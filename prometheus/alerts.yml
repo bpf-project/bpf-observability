@@ -11,10 +11,19 @@ groups:
           description: "The group messages bridge is experiencing high latency in relaying messages."
 
       - alert: BridgeDown
-        expr: up{job="bpf-groups-bridge"} == 0
+        expr: up{job="bpf-groups-bridge", instance="group-messages-bridge:3002"} == 0
         for: 1m
         labels:
           severity: critical
         annotations:
           summary: "Group Messages Bridge is down"
           description: "Prometheus cannot scrape the group-messages-bridge service."
+      - alert: BackendDown
+        expr: up{job="bpf-application-backend", instance="backend:3000"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "EasyCasual Backend is down"
+          description: "Prometheus cannot scrape the EasyCasual backend service."
+
