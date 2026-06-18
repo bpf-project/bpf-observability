@@ -63,7 +63,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "up{job=\"bpf-application-backend\"}",
+          "expr": "up{job=\"bpf-application-backend\", instance=\"backend:3000\"}",
           "instant": true,
           "legendFormat": "{{instance}}",
           "range": false,
@@ -71,7 +71,39 @@
         }
       ],
       "title": "Backend Up",
-      "type": "stat"
+      "type": "stat",
+      "fieldConfig": {
+        "defaults": {
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "red",
+                "value": null
+              },
+              {
+                "color": "green",
+                "value": 1
+              }
+            ]
+          },
+          "mappings": [
+            {
+              "options": {
+                "0": {
+                  "color": "red",
+                  "text": "DOWN"
+                },
+                "1": {
+                  "color": "green",
+                  "text": "UP"
+                }
+              },
+              "type": "value"
+            }
+          ]
+        }
+      }
     },
     {
       "datasource": {
