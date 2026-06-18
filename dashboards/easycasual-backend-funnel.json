@@ -140,7 +140,7 @@
             "uid": "${datasource}"
           },
           "editorMode": "code",
-          "expr": "(sum(rate(easycasual_backend_active_usage_reported_seconds_sum{job=\"bpf-application-backend\"}[$__rate_interval])) / clamp_min(sum(rate(easycasual_backend_active_usage_reported_seconds_count[$__rate_interval])), 1)) or vector(0)",
+          "expr": "(sum(rate(easycasual_backend_active_usage_reported_seconds_sum{job=\"bpf-application-backend\"}[$__rate_interval])) / clamp_min(sum(rate(easycasual_backend_active_usage_reported_seconds_count{job=\"bpf-application-backend\"}[$__rate_interval])), 1)) or vector(0)",
           "instant": true,
           "legendFormat": "seconds",
           "range": false,
