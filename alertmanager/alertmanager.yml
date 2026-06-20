@@ -1,0 +1,27 @@
+global:
+  resolve_timeout: 5m
+
+route:
+  receiver: 'telegram'
+  group_by: ['alertname', 'severity']
+  group_wait: 10s
+  group_interval: 1m
+  repeat_interval: 5m
+
+receivers:
+  - name: 'telegram'
+    telegram_configs:
+      - bot_token: '${TELEGRAM_BOT_TOKEN}'
+        chat_id: ${TELEGRAM_CHAT_ID}
+        send_resolved: true
+        parse_type: Markdown
+        message: |
+{{ range .Alerts }}
+*Alerta:* {{ .Labels.alertname }} [{{ .Labels.severity | toUpper }}]
+*Estado:* {{ .Status | toUpper }}
+*Resumen:* {{ .Annotations.summary }}
+*Detalle:* {{ .Annotations.description }}
+*Runbook:* <{{ .Annotations.runbook_url }}|📖 Abrir runbook>
+*Desde:* {{ .StartsAt.Format "2006-01-02 15:04:05 MST" }}
+───────────────────────────
+{{ end }}
