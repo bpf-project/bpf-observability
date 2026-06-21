@@ -9,6 +9,7 @@ groups:
         annotations:
           summary: "High bridge relay latency (P95 > 5s)"
           description: "The group messages bridge is experiencing high latency in relaying messages."
+          runbook_url: "https://github.com/bpf-project/bpf-observability/blob/main/runbooks/bridge-latency.md"
 
       - alert: BridgeDown
         expr: up{job="bpf-groups-bridge", instance="group-messages-bridge:3002"} == 0
@@ -18,6 +19,10 @@ groups:
         annotations:
           summary: "Group Messages Bridge is down"
           description: "Prometheus cannot scrape the group-messages-bridge service."
+          runbook_url: "https://github.com/bpf-project/bpf-observability/blob/main/runbooks/bridge-down.md"
+
+  - name: EasyCasualBackendAlerts
+    rules:
       - alert: BackendDown
         expr: up{job="bpf-application-backend", instance="backend:3000"} == 0
         for: 1m
@@ -26,4 +31,68 @@ groups:
         annotations:
           summary: "EasyCasual Backend is down"
           description: "Prometheus cannot scrape the EasyCasual backend service."
+          runbook_url: "https://github.com/bpf-project/bpf-observability/blob/main/runbooks/backend-down.md"
 
+      - alert: HighBackendLatency
+        expr: histogram_quantile(0.95, sum by (le) (rate(easycasual_backend_http_request_duration_seconds_bucket[5m]))) > 5
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High backend request latency (P95 > 5s)"
+          description: "Backend HTTP requests are taking more than 5 seconds at P95."
+          runbook_url: "https://github.com/bpf-project/bpf-observability/blob/main/runbooks/backend-latency.md"
+
+      - alert: BackendHighErrorRate
+        expr: sum(rate(easycasual_backend_http_responses_total{status_family="5xx"}[5m])) / sum(rate(easycasual_backend_http_responses_total[5m])) > 0.05
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Backend 5xx error rate > 5%"
+          description: "More than 5% of backend requests are returning 5xx errors."
+          runbook_url: "https://github.com/bpf-project/bpf-observability/blob/main/runbooks/backend-errors.md"
+
+      - alert: HighEmptySearchRate
+        expr: sum(rate(easycasual_backend_search_results_total{has_results="false"}[5m])) / sum(rate(easycasual_backend_search_results_total[5m])) > 0.3
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High rate of empty search results (>30%)"
+          description: "More than 30% of post searches return zero results, indicating potential coverage gaps."
+          runbook_url: "https://github.com/bpf-project/bpf-observability/blob/main/runbooks/empty-search.md"
+
+  - name: EasyCasualPaymentsAlerts
+    rules:
+      - alert: PaymentCheckoutErrors
+        expr: sum(rate(easycasual_backend_payment_attempts_total{status="error"}[5m])) > sum(rate(easycasual_backend_payment_attempts_total{status="success"}[5m]))
+        for: 3m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Payment checkout errors exceed successes"
+          description: "Payment checkout error rate is higher than success rate, indicating a checkout pipeline problem."
+          runbook_url: "https://github.com/bpf-project/bpf-observability/blob/main/runbooks/payment-errors.md"
+
+      - alert: StripeWebhookFailures
+        expr: sum(rate(easycasual_backend_webhook_events_total{status="error"}[5m])) > 0
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Stripe webhook processing errors detected"
+          description: "Stripe webhooks are failing to process, subscriptions may not be updated."
+          runbook_url: "https://github.com/bpf-project/bpf-observability/blob/main/runbooks/stripe-webhook.md"
+
+  - name: EasyCasualModerationAlerts
+    rules:
+      - alert: HighReportVolume
+        expr: increase(easycasual_backend_moderation_reports_total{action="created"}[1h]) > 50
+        for: 1h
+        labels:
+          severity: warning
+        annotations:
+          summary: "Spike in moderation reports (>50/hour)"
+          description: "Unusual volume of moderation reports may indicate abuse or a content issue."
+          runbook_url: "https://github.com/bpf-project/bpf-observability/blob/main/runbooks/moderation-spike.md"
