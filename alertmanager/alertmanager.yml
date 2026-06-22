@@ -16,12 +16,12 @@ receivers:
         send_resolved: true
         parse_type: Markdown
         message: |
-{{ range .Alerts }}
-*Alerta:* {{ .Labels.alertname }} [{{ .Labels.severity | toUpper }}]
-*Estado:* {{ .Status | toUpper }}
-*Resumen:* {{ .Annotations.summary }}
-*Detalle:* {{ .Annotations.description }}
-*Runbook:* <{{ .Annotations.runbook_url }}|📖 Abrir runbook>
-*Desde:* {{ .StartsAt.Format "2006-01-02 15:04:05 MST" }}
-───────────────────────────
-{{ end }}
+          {{ range .Alerts }}
+          *Alerta:* {{ .Labels.alertname }} [{{ .Labels.severity | toUpper }}]
+          *Estado:* {{ .Status | toUpper }}
+          *Resumen:* {{ .Annotations.summary }}
+          *Detalle:* {{ .Annotations.description }}
+          *Runbook:* <{{ .Annotations.runbook_url }}|📖 Abrir runbook>
+          *Desde:* {{ .StartsAt.Format "2006-01-02 15:04:05 MST" }}
+          ─────────────────────────
+          {{ end }}
