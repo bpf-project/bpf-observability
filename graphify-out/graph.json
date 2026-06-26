@@ -1,0 +1,3441 @@
+{
+  "nodes": [
+    {
+      "id": "dashboards_easycasual_backend_funnel",
+      "label": "easycasual-backend-funnel.json",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L1"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_annotations",
+      "label": "annotations",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L2"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_annotations_list",
+      "label": "list",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L3"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_editable",
+      "label": "editable",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L24"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_fiscalyearstartmonth",
+      "label": "fiscalYearStartMonth",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L25"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_graphtooltip",
+      "label": "graphTooltip",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L26"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_id",
+      "label": "id",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L27"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_links",
+      "label": "links",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L28"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_livenow",
+      "label": "liveNow",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L29"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_panels",
+      "label": "panels",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L30"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_refresh",
+      "label": "refresh",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L506"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_schemaversion",
+      "label": "schemaVersion",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L507"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_style",
+      "label": "style",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L508"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_tags",
+      "label": "tags",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L509"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_templating",
+      "label": "templating",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L514"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_templating_list",
+      "label": "list",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L515"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_time",
+      "label": "time",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L534"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_time_from",
+      "label": "from",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L535"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_time_to",
+      "label": "to",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L536"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_timezone",
+      "label": "timezone",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L538"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_title",
+      "label": "title",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L539"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_version",
+      "label": "version",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L540"
+    },
+    {
+      "id": "dashboards_easycasual_backend_funnel_uid",
+      "label": "uid",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L541"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors",
+      "label": "easycasual-backend-http-errors.json",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L1"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_annotations",
+      "label": "annotations",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L2"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_annotations_list",
+      "label": "list",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L3"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_editable",
+      "label": "editable",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L24"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_fiscalyearstartmonth",
+      "label": "fiscalYearStartMonth",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L25"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_graphtooltip",
+      "label": "graphTooltip",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L26"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_id",
+      "label": "id",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L27"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_links",
+      "label": "links",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L28"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_livenow",
+      "label": "liveNow",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L29"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_panels",
+      "label": "panels",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L30"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_refresh",
+      "label": "refresh",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L320"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_schemaversion",
+      "label": "schemaVersion",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L321"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_tags",
+      "label": "tags",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L322"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_templating",
+      "label": "templating",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L328"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_templating_list",
+      "label": "list",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L329"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_time",
+      "label": "time",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L350"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_time_from",
+      "label": "from",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L351"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_time_to",
+      "label": "to",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L352"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_timepicker",
+      "label": "timepicker",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L354"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_timezone",
+      "label": "timezone",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L355"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_title",
+      "label": "title",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L356"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_uid",
+      "label": "uid",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L357"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_version",
+      "label": "version",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L358"
+    },
+    {
+      "id": "dashboards_easycasual_backend_http_errors_weekstart",
+      "label": "weekStart",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L359"
+    },
+    {
+      "id": "dashboards_easycasual_backend_infrastructure",
+      "label": "easycasual-backend-infrastructure.json",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L1"
+    },
+    {
+      "id": "dashboards_easycasual_backend_infrastructure_uid",
+      "label": "uid",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L2"
+    },
+    {
+      "id": "dashboards_easycasual_backend_infrastructure_title",
+      "label": "title",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L3"
+    },
+    {
+      "id": "dashboards_easycasual_backend_infrastructure_schemaversion",
+      "label": "schemaVersion",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L4"
+    },
+    {
+      "id": "dashboards_easycasual_backend_infrastructure_version",
+      "label": "version",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L5"
+    },
+    {
+      "id": "dashboards_easycasual_backend_infrastructure_refresh",
+      "label": "refresh",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L6"
+    },
+    {
+      "id": "dashboards_easycasual_backend_infrastructure_time",
+      "label": "time",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L7"
+    },
+    {
+      "id": "dashboards_easycasual_backend_infrastructure_time_from",
+      "label": "from",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L8"
+    },
+    {
+      "id": "dashboards_easycasual_backend_infrastructure_time_to",
+      "label": "to",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L9"
+    },
+    {
+      "id": "dashboards_easycasual_backend_infrastructure_timezone",
+      "label": "timezone",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L11"
+    },
+    {
+      "id": "dashboards_easycasual_backend_infrastructure_panels",
+      "label": "panels",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L12"
+    },
+    {
+      "id": "dashboards_easycasual_backend_infrastructure_templating",
+      "label": "templating",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L362"
+    },
+    {
+      "id": "dashboards_easycasual_backend_infrastructure_templating_list",
+      "label": "list",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L363"
+    },
+    {
+      "id": "dashboards_easycasual_bridge",
+      "label": "easycasual-bridge.json",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L1"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_annotations",
+      "label": "annotations",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L2"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_annotations_list",
+      "label": "list",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L3"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_editable",
+      "label": "editable",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L24"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_fiscalyearstartmonth",
+      "label": "fiscalYearStartMonth",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L25"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_graphtooltip",
+      "label": "graphTooltip",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L26"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_id",
+      "label": "id",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L27"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_links",
+      "label": "links",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L28"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_livenow",
+      "label": "liveNow",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L29"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_panels",
+      "label": "panels",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L30"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_schemaversion",
+      "label": "schemaVersion",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4310"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_style",
+      "label": "style",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4311"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_tags",
+      "label": "tags",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4312"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_templating",
+      "label": "templating",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4316"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_templating_list",
+      "label": "list",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4317"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_time",
+      "label": "time",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4334"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_time_from",
+      "label": "from",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4335"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_time_to",
+      "label": "to",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4336"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_timepicker",
+      "label": "timepicker",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4338"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_timezone",
+      "label": "timezone",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4339"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_title",
+      "label": "title",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4340"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_uid",
+      "label": "uid",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4341"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_version",
+      "label": "version",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4342"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_weekstart",
+      "label": "weekStart",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4343"
+    },
+    {
+      "id": "dashboards_easycasual_bridge_refresh",
+      "label": "refresh",
+      "file_type": "code",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4344"
+    },
+    {
+      "id": "scripts_deploy",
+      "label": "deploy.sh",
+      "file_type": "code",
+      "source_file": "scripts/deploy.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      }
+    },
+    {
+      "id": "users_mariano_fresno_bpf_observability_scripts_deploy_sh__entry",
+      "label": "deploy.sh script",
+      "file_type": "code",
+      "source_file": "scripts/deploy.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      }
+    },
+    {
+      "id": "deploy",
+      "label": "DEPLOY.md",
+      "file_type": "document",
+      "source_file": "DEPLOY.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "deploy_deployment_guide",
+      "label": "Deployment Guide",
+      "file_type": "document",
+      "source_file": "DEPLOY.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "deploy_architecture_overview",
+      "label": "Architecture Overview",
+      "file_type": "document",
+      "source_file": "DEPLOY.md",
+      "source_location": "L5"
+    },
+    {
+      "id": "deploy_repository_contents",
+      "label": "Repository Contents",
+      "file_type": "document",
+      "source_file": "DEPLOY.md",
+      "source_location": "L17"
+    },
+    {
+      "id": "deploy_deploying_the_vps_federation_server",
+      "label": "Deploying the VPS Federation Server",
+      "file_type": "document",
+      "source_file": "DEPLOY.md",
+      "source_location": "L25"
+    },
+    {
+      "id": "deploy_option_1_deploy_script",
+      "label": "Option 1: Deploy script",
+      "file_type": "document",
+      "source_file": "DEPLOY.md",
+      "source_location": "L29"
+    },
+    {
+      "id": "deploy_option_2_manual_deployment",
+      "label": "Option 2: Manual deployment",
+      "file_type": "document",
+      "source_file": "DEPLOY.md",
+      "source_location": "L37"
+    },
+    {
+      "id": "deploy_deploying_the_on_prem_configuration",
+      "label": "Deploying the On-prem Configuration",
+      "file_type": "document",
+      "source_file": "DEPLOY.md",
+      "source_location": "L60"
+    },
+    {
+      "id": "deploy_deploying_grafana_dashboards",
+      "label": "Deploying Grafana Dashboards",
+      "file_type": "document",
+      "source_file": "DEPLOY.md",
+      "source_location": "L91"
+    },
+    {
+      "id": "deploy_setting_up_the_grafana_api_token",
+      "label": "Setting up the Grafana API token",
+      "file_type": "document",
+      "source_file": "DEPLOY.md",
+      "source_location": "L95"
+    },
+    {
+      "id": "deploy_manual_dashboard_import",
+      "label": "Manual dashboard import",
+      "file_type": "document",
+      "source_file": "DEPLOY.md",
+      "source_location": "L110"
+    },
+    {
+      "id": "deploy_verification",
+      "label": "Verification",
+      "file_type": "document",
+      "source_file": "DEPLOY.md",
+      "source_location": "L118"
+    },
+    {
+      "id": "deploy_verify_the_vps_federation_server",
+      "label": "Verify the VPS federation server",
+      "file_type": "document",
+      "source_file": "DEPLOY.md",
+      "source_location": "L120"
+    },
+    {
+      "id": "deploy_verify_the_on_prem_central_prometheus",
+      "label": "Verify the on-prem central Prometheus",
+      "file_type": "document",
+      "source_file": "DEPLOY.md",
+      "source_location": "L144"
+    },
+    {
+      "id": "deploy_verify_the_grafana_dashboard",
+      "label": "Verify the Grafana dashboard",
+      "file_type": "document",
+      "source_file": "DEPLOY.md",
+      "source_location": "L159"
+    },
+    {
+      "id": "deploy_troubleshooting",
+      "label": "Troubleshooting",
+      "file_type": "document",
+      "source_file": "DEPLOY.md",
+      "source_location": "L163"
+    },
+    {
+      "id": "deploy_federation_target_shows_down_on_the_on_prem_server",
+      "label": "Federation target shows down on the on-prem server",
+      "file_type": "document",
+      "source_file": "DEPLOY.md",
+      "source_location": "L165"
+    },
+    {
+      "id": "deploy_dashboard_not_updating",
+      "label": "Dashboard not updating",
+      "file_type": "document",
+      "source_file": "DEPLOY.md",
+      "source_location": "L181"
+    },
+    {
+      "id": "deploy_no_metrics_but_targets_are_up",
+      "label": "No metrics but targets are up",
+      "file_type": "document",
+      "source_file": "DEPLOY.md",
+      "source_location": "L185"
+    },
+    {
+      "id": "readme",
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "readme_bpf_observability",
+      "label": "BPF Observability",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "readme_contents",
+      "label": "Contents",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L5"
+    },
+    {
+      "id": "readme_architecture",
+      "label": "Architecture",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L17"
+    },
+    {
+      "id": "readme_setup",
+      "label": "Setup",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L27"
+    },
+    {
+      "id": "readme_grafana",
+      "label": "Grafana",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L29"
+    },
+    {
+      "id": "readme_prometheus",
+      "label": "Prometheus",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L34"
+    },
+    {
+      "id": "readme_dashboards",
+      "label": "Dashboards",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L56"
+    },
+    {
+      "id": "readme_easycasual_group_messages_bridge",
+      "label": "EasyCasual - Group Messages Bridge",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L58"
+    },
+    {
+      "id": "readme_easycasual_backend_funnel_product_metrics",
+      "label": "EasyCasual - Backend Funnel & Product Metrics",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L69"
+    },
+    {
+      "id": "readme_easycasual_backend_http_errors",
+      "label": "EasyCasual - Backend HTTP Errors",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L78"
+    },
+    {
+      "id": "docs_architecture",
+      "label": "architecture.md",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_architecture_observability_architecture",
+      "label": "Observability Architecture",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_architecture_components",
+      "label": "Components",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L3"
+    },
+    {
+      "id": "docs_architecture_data_flow",
+      "label": "Data Flow",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L16"
+    },
+    {
+      "id": "docs_architecture_rathole_bidirectional_tunnel",
+      "label": "Rathole Bidirectional Tunnel",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L51"
+    },
+    {
+      "id": "docs_architecture_service_details",
+      "label": "Service Details",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L72"
+    },
+    {
+      "id": "docs_architecture_prometheus_federation_server_cloud_server",
+      "label": "Prometheus Federation Server (Cloud Server)",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L83"
+    },
+    {
+      "id": "docs_architecture_configuration",
+      "label": "Configuration",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L92"
+    },
+    {
+      "id": "docs_architecture_docker_compose_flags",
+      "label": "Docker Compose Flags",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L112"
+    },
+    {
+      "id": "docs_architecture_central_prometheus_on_prem_server",
+      "label": "Central Prometheus (On-prem Server)",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L126"
+    },
+    {
+      "id": "docs_architecture_grafana",
+      "label": "Grafana",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L142"
+    },
+    {
+      "id": "docs_architecture_why_federation_over_remote_write",
+      "label": "Why Federation Over remote_write?",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L148"
+    },
+    {
+      "id": "runbooks_backend_down",
+      "label": "backend-down.md",
+      "file_type": "document",
+      "source_file": "runbooks/backend-down.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "runbooks_backend_down_backend_down",
+      "label": "Backend Down",
+      "file_type": "document",
+      "source_file": "runbooks/backend-down.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "runbooks_backend_down_impacto",
+      "label": "Impacto",
+      "file_type": "document",
+      "source_file": "runbooks/backend-down.md",
+      "source_location": "L6"
+    },
+    {
+      "id": "runbooks_backend_down_diagnóstico_inmediato",
+      "label": "Diagnóstico inmediato",
+      "file_type": "document",
+      "source_file": "runbooks/backend-down.md",
+      "source_location": "L13"
+    },
+    {
+      "id": "runbooks_backend_down_1_verificar_container",
+      "label": "1. Verificar container",
+      "file_type": "document",
+      "source_file": "runbooks/backend-down.md",
+      "source_location": "L15"
+    },
+    {
+      "id": "runbooks_backend_down_2_verificar_dependencias",
+      "label": "2. Verificar dependencias",
+      "file_type": "document",
+      "source_file": "runbooks/backend-down.md",
+      "source_location": "L22"
+    },
+    {
+      "id": "runbooks_backend_down_3_verificar_sistema",
+      "label": "3. Verificar sistema",
+      "file_type": "document",
+      "source_file": "runbooks/backend-down.md",
+      "source_location": "L28"
+    },
+    {
+      "id": "runbooks_backend_down_resolución_por_causa",
+      "label": "Resolución por causa",
+      "file_type": "document",
+      "source_file": "runbooks/backend-down.md",
+      "source_location": "L35"
+    },
+    {
+      "id": "runbooks_backend_down_procedimiento_de_emergencia",
+      "label": "Procedimiento de emergencia",
+      "file_type": "document",
+      "source_file": "runbooks/backend-down.md",
+      "source_location": "L45"
+    },
+    {
+      "id": "runbooks_backend_down_prevención",
+      "label": "Prevención",
+      "file_type": "document",
+      "source_file": "runbooks/backend-down.md",
+      "source_location": "L61"
+    },
+    {
+      "id": "runbooks_backend_errors",
+      "label": "backend-errors.md",
+      "file_type": "document",
+      "source_file": "runbooks/backend-errors.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "runbooks_backend_errors_backend_5xx_error_rate_5",
+      "label": "Backend 5xx Error Rate > 5%",
+      "file_type": "document",
+      "source_file": "runbooks/backend-errors.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "runbooks_backend_errors_impacto",
+      "label": "Impacto",
+      "file_type": "document",
+      "source_file": "runbooks/backend-errors.md",
+      "source_location": "L5"
+    },
+    {
+      "id": "runbooks_backend_errors_diagnóstico",
+      "label": "Diagnóstico",
+      "file_type": "document",
+      "source_file": "runbooks/backend-errors.md",
+      "source_location": "L10"
+    },
+    {
+      "id": "runbooks_backend_errors_1_verificar_errores_por_ruta",
+      "label": "1. Verificar errores por ruta",
+      "file_type": "document",
+      "source_file": "runbooks/backend-errors.md",
+      "source_location": "L12"
+    },
+    {
+      "id": "runbooks_backend_errors_2_verificar_logs_del_backend",
+      "label": "2. Verificar logs del backend",
+      "file_type": "document",
+      "source_file": "runbooks/backend-errors.md",
+      "source_location": "L17"
+    },
+    {
+      "id": "runbooks_backend_errors_3_verificar_dependencias",
+      "label": "3. Verificar dependencias",
+      "file_type": "document",
+      "source_file": "runbooks/backend-errors.md",
+      "source_location": "L22"
+    },
+    {
+      "id": "runbooks_backend_errors_4_verificar_métricas_en_vivo",
+      "label": "4. Verificar métricas en vivo",
+      "file_type": "document",
+      "source_file": "runbooks/backend-errors.md",
+      "source_location": "L31"
+    },
+    {
+      "id": "runbooks_backend_errors_escenarios_y_resolución",
+      "label": "Escenarios y resolución",
+      "file_type": "document",
+      "source_file": "runbooks/backend-errors.md",
+      "source_location": "L36"
+    },
+    {
+      "id": "runbooks_backend_errors_prevención",
+      "label": "Prevención",
+      "file_type": "document",
+      "source_file": "runbooks/backend-errors.md",
+      "source_location": "L46"
+    },
+    {
+      "id": "runbooks_backend_latency",
+      "label": "backend-latency.md",
+      "file_type": "document",
+      "source_file": "runbooks/backend-latency.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "runbooks_backend_latency_backend_high_latency_p95_5s",
+      "label": "Backend High Latency (P95 > 5s)",
+      "file_type": "document",
+      "source_file": "runbooks/backend-latency.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "runbooks_backend_latency_impacto",
+      "label": "Impacto",
+      "file_type": "document",
+      "source_file": "runbooks/backend-latency.md",
+      "source_location": "L5"
+    },
+    {
+      "id": "runbooks_backend_latency_causas_comunes",
+      "label": "Causas comunes",
+      "file_type": "document",
+      "source_file": "runbooks/backend-latency.md",
+      "source_location": "L10"
+    },
+    {
+      "id": "runbooks_backend_latency_diagnóstico",
+      "label": "Diagnóstico",
+      "file_type": "document",
+      "source_file": "runbooks/backend-latency.md",
+      "source_location": "L17"
+    },
+    {
+      "id": "runbooks_backend_latency_1_verificar_dashboard_de_infra",
+      "label": "1. Verificar dashboard de infra",
+      "file_type": "document",
+      "source_file": "runbooks/backend-latency.md",
+      "source_location": "L19"
+    },
+    {
+      "id": "runbooks_backend_latency_2_verificar_métricas_en_vivo",
+      "label": "2. Verificar métricas en vivo",
+      "file_type": "document",
+      "source_file": "runbooks/backend-latency.md",
+      "source_location": "L26"
+    },
+    {
+      "id": "runbooks_backend_latency_3_verificar_database",
+      "label": "3. Verificar database",
+      "file_type": "document",
+      "source_file": "runbooks/backend-latency.md",
+      "source_location": "L32"
+    },
+    {
+      "id": "runbooks_backend_latency_4_verificar_recursos_del_sistema",
+      "label": "4. Verificar recursos del sistema",
+      "file_type": "document",
+      "source_file": "runbooks/backend-latency.md",
+      "source_location": "L38"
+    },
+    {
+      "id": "runbooks_backend_latency_resolución",
+      "label": "Resolución",
+      "file_type": "document",
+      "source_file": "runbooks/backend-latency.md",
+      "source_location": "L45"
+    },
+    {
+      "id": "runbooks_backend_latency_prevención",
+      "label": "Prevención",
+      "file_type": "document",
+      "source_file": "runbooks/backend-latency.md",
+      "source_location": "L55"
+    },
+    {
+      "id": "runbooks_bridge_down",
+      "label": "bridge-down.md",
+      "file_type": "document",
+      "source_file": "runbooks/bridge-down.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "runbooks_bridge_down_bridge_down",
+      "label": "Bridge Down",
+      "file_type": "document",
+      "source_file": "runbooks/bridge-down.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "runbooks_bridge_down_impacto",
+      "label": "Impacto",
+      "file_type": "document",
+      "source_file": "runbooks/bridge-down.md",
+      "source_location": "L5"
+    },
+    {
+      "id": "runbooks_bridge_down_diagnóstico_rápido",
+      "label": "Diagnóstico rápido",
+      "file_type": "document",
+      "source_file": "runbooks/bridge-down.md",
+      "source_location": "L10"
+    },
+    {
+      "id": "runbooks_bridge_down_1_verificar_estado_del_container",
+      "label": "1. Verificar estado del container",
+      "file_type": "document",
+      "source_file": "runbooks/bridge-down.md",
+      "source_location": "L12"
+    },
+    {
+      "id": "runbooks_bridge_down_2_ver_logs_del_container",
+      "label": "2. Ver logs del container",
+      "file_type": "document",
+      "source_file": "runbooks/bridge-down.md",
+      "source_location": "L17"
+    },
+    {
+      "id": "runbooks_bridge_down_3_intentar_ping_al_endpoint",
+      "label": "3. Intentar ping al endpoint",
+      "file_type": "document",
+      "source_file": "runbooks/bridge-down.md",
+      "source_location": "L22"
+    },
+    {
+      "id": "runbooks_bridge_down_escenarios_comunes",
+      "label": "Escenarios comunes",
+      "file_type": "document",
+      "source_file": "runbooks/bridge-down.md",
+      "source_location": "L27"
+    },
+    {
+      "id": "runbooks_bridge_down_recuperación",
+      "label": "Recuperación",
+      "file_type": "document",
+      "source_file": "runbooks/bridge-down.md",
+      "source_location": "L36"
+    },
+    {
+      "id": "runbooks_bridge_down_si_el_problema_persiste",
+      "label": "Si el problema persiste",
+      "file_type": "document",
+      "source_file": "runbooks/bridge-down.md",
+      "source_location": "L49"
+    },
+    {
+      "id": "runbooks_bridge_latency",
+      "label": "bridge-latency.md",
+      "file_type": "document",
+      "source_file": "runbooks/bridge-latency.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "runbooks_bridge_latency_high_bridge_latency",
+      "label": "High Bridge Latency",
+      "file_type": "document",
+      "source_file": "runbooks/bridge-latency.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "runbooks_bridge_latency_qué_es",
+      "label": "¿Qué es?",
+      "file_type": "document",
+      "source_file": "runbooks/bridge-latency.md",
+      "source_location": "L6"
+    },
+    {
+      "id": "runbooks_bridge_latency_causas_comunes",
+      "label": "Causas comunes",
+      "file_type": "document",
+      "source_file": "runbooks/bridge-latency.md",
+      "source_location": "L9"
+    },
+    {
+      "id": "runbooks_bridge_latency_pasos_para_diagnosticar",
+      "label": "Pasos para diagnosticar",
+      "file_type": "document",
+      "source_file": "runbooks/bridge-latency.md",
+      "source_location": "L15"
+    },
+    {
+      "id": "runbooks_bridge_latency_1_verificar_dashboard_del_bridge",
+      "label": "1. Verificar dashboard del Bridge",
+      "file_type": "document",
+      "source_file": "runbooks/bridge-latency.md",
+      "source_location": "L17"
+    },
+    {
+      "id": "runbooks_bridge_latency_2_verificar_correlación_con_backend",
+      "label": "2. Verificar correlación con backend",
+      "file_type": "document",
+      "source_file": "runbooks/bridge-latency.md",
+      "source_location": "L20"
+    },
+    {
+      "id": "runbooks_bridge_latency_3_verificar_recursos_del_container",
+      "label": "3. Verificar recursos del container",
+      "file_type": "document",
+      "source_file": "runbooks/bridge-latency.md",
+      "source_location": "L26"
+    },
+    {
+      "id": "runbooks_bridge_latency_resolución",
+      "label": "Resolución",
+      "file_type": "document",
+      "source_file": "runbooks/bridge-latency.md",
+      "source_location": "L31"
+    },
+    {
+      "id": "runbooks_bridge_latency_prevención",
+      "label": "Prevención",
+      "file_type": "document",
+      "source_file": "runbooks/bridge-latency.md",
+      "source_location": "L40"
+    },
+    {
+      "id": "runbooks_empty_search",
+      "label": "empty-search.md",
+      "file_type": "document",
+      "source_file": "runbooks/empty-search.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "runbooks_empty_search_high_empty_search_rate_30",
+      "label": "High Empty Search Rate (>30%)",
+      "file_type": "document",
+      "source_file": "runbooks/empty-search.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "runbooks_empty_search_impacto",
+      "label": "Impacto",
+      "file_type": "document",
+      "source_file": "runbooks/empty-search.md",
+      "source_location": "L5"
+    },
+    {
+      "id": "runbooks_empty_search_causas_comunes",
+      "label": "Causas comunes",
+      "file_type": "document",
+      "source_file": "runbooks/empty-search.md",
+      "source_location": "L10"
+    },
+    {
+      "id": "runbooks_empty_search_diagnóstico",
+      "label": "Diagnóstico",
+      "file_type": "document",
+      "source_file": "runbooks/empty-search.md",
+      "source_location": "L17"
+    },
+    {
+      "id": "runbooks_empty_search_1_verificar_tasa_vs_histórico",
+      "label": "1. Verificar tasa vs histórico",
+      "file_type": "document",
+      "source_file": "runbooks/empty-search.md",
+      "source_location": "L19"
+    },
+    {
+      "id": "runbooks_empty_search_2_verificar_data_freshness",
+      "label": "2. Verificar data freshness",
+      "file_type": "document",
+      "source_file": "runbooks/empty-search.md",
+      "source_location": "L22"
+    },
+    {
+      "id": "runbooks_empty_search_3_verificar_logs_del_backend",
+      "label": "3. Verificar logs del backend",
+      "file_type": "document",
+      "source_file": "runbooks/empty-search.md",
+      "source_location": "L31"
+    },
+    {
+      "id": "runbooks_empty_search_resolución",
+      "label": "Resolución",
+      "file_type": "document",
+      "source_file": "runbooks/empty-search.md",
+      "source_location": "L36"
+    },
+    {
+      "id": "runbooks_empty_search_prevención",
+      "label": "Prevención",
+      "file_type": "document",
+      "source_file": "runbooks/empty-search.md",
+      "source_location": "L45"
+    },
+    {
+      "id": "runbooks_moderation_spike",
+      "label": "moderation-spike.md",
+      "file_type": "document",
+      "source_file": "runbooks/moderation-spike.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "runbooks_moderation_spike_high_report_volume_moderation_spike",
+      "label": "High Report Volume (Moderation Spike)",
+      "file_type": "document",
+      "source_file": "runbooks/moderation-spike.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "runbooks_moderation_spike_impacto",
+      "label": "Impacto",
+      "file_type": "document",
+      "source_file": "runbooks/moderation-spike.md",
+      "source_location": "L6"
+    },
+    {
+      "id": "runbooks_moderation_spike_causas_comunes",
+      "label": "Causas comunes",
+      "file_type": "document",
+      "source_file": "runbooks/moderation-spike.md",
+      "source_location": "L11"
+    },
+    {
+      "id": "runbooks_moderation_spike_diagnóstico",
+      "label": "Diagnóstico",
+      "file_type": "document",
+      "source_file": "runbooks/moderation-spike.md",
+      "source_location": "L18"
+    },
+    {
+      "id": "runbooks_moderation_spike_1_verificar_tipo_de_reports",
+      "label": "1. Verificar tipo de reports",
+      "file_type": "document",
+      "source_file": "runbooks/moderation-spike.md",
+      "source_location": "L20"
+    },
+    {
+      "id": "runbooks_moderation_spike_2_verificar_dashboard",
+      "label": "2. Verificar dashboard",
+      "file_type": "document",
+      "source_file": "runbooks/moderation-spike.md",
+      "source_location": "L26"
+    },
+    {
+      "id": "runbooks_moderation_spike_3_verificar_fuentes",
+      "label": "3. Verificar fuentes",
+      "file_type": "document",
+      "source_file": "runbooks/moderation-spike.md",
+      "source_location": "L31"
+    },
+    {
+      "id": "runbooks_moderation_spike_resolución",
+      "label": "Resolución",
+      "file_type": "document",
+      "source_file": "runbooks/moderation-spike.md",
+      "source_location": "L37"
+    },
+    {
+      "id": "runbooks_moderation_spike_prevención",
+      "label": "Prevención",
+      "file_type": "document",
+      "source_file": "runbooks/moderation-spike.md",
+      "source_location": "L47"
+    },
+    {
+      "id": "runbooks_payment_errors",
+      "label": "payment-errors.md",
+      "file_type": "document",
+      "source_file": "runbooks/payment-errors.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "runbooks_payment_errors_payment_checkout_errors",
+      "label": "Payment Checkout Errors",
+      "file_type": "document",
+      "source_file": "runbooks/payment-errors.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "runbooks_payment_errors_impacto",
+      "label": "Impacto",
+      "file_type": "document",
+      "source_file": "runbooks/payment-errors.md",
+      "source_location": "L6"
+    },
+    {
+      "id": "runbooks_payment_errors_diagnóstico",
+      "label": "Diagnóstico",
+      "file_type": "document",
+      "source_file": "runbooks/payment-errors.md",
+      "source_location": "L11"
+    },
+    {
+      "id": "runbooks_payment_errors_1_verificar_stripe_status",
+      "label": "1. Verificar Stripe status",
+      "file_type": "document",
+      "source_file": "runbooks/payment-errors.md",
+      "source_location": "L13"
+    },
+    {
+      "id": "runbooks_payment_errors_2_verificar_configuración_de_stripe",
+      "label": "2. Verificar configuración de Stripe",
+      "file_type": "document",
+      "source_file": "runbooks/payment-errors.md",
+      "source_location": "L19"
+    },
+    {
+      "id": "runbooks_payment_errors_3_verificar_tipos_de_error",
+      "label": "3. Verificar tipos de error",
+      "file_type": "document",
+      "source_file": "runbooks/payment-errors.md",
+      "source_location": "L25"
+    },
+    {
+      "id": "runbooks_payment_errors_escenarios_comunes",
+      "label": "Escenarios comunes",
+      "file_type": "document",
+      "source_file": "runbooks/payment-errors.md",
+      "source_location": "L30"
+    },
+    {
+      "id": "runbooks_payment_errors_resolución",
+      "label": "Resolución",
+      "file_type": "document",
+      "source_file": "runbooks/payment-errors.md",
+      "source_location": "L40"
+    },
+    {
+      "id": "runbooks_payment_errors_prevención",
+      "label": "Prevención",
+      "file_type": "document",
+      "source_file": "runbooks/payment-errors.md",
+      "source_location": "L56"
+    },
+    {
+      "id": "runbooks_stripe_webhook",
+      "label": "stripe-webhook.md",
+      "file_type": "document",
+      "source_file": "runbooks/stripe-webhook.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "runbooks_stripe_webhook_stripe_webhook_failures",
+      "label": "Stripe Webhook Failures",
+      "file_type": "document",
+      "source_file": "runbooks/stripe-webhook.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "runbooks_stripe_webhook_impacto",
+      "label": "Impacto",
+      "file_type": "document",
+      "source_file": "runbooks/stripe-webhook.md",
+      "source_location": "L6"
+    },
+    {
+      "id": "runbooks_stripe_webhook_diagnóstico",
+      "label": "Diagnóstico",
+      "file_type": "document",
+      "source_file": "runbooks/stripe-webhook.md",
+      "source_location": "L11"
+    },
+    {
+      "id": "runbooks_stripe_webhook_1_verificar_secreto_de_webhook",
+      "label": "1. Verificar secreto de webhook",
+      "file_type": "document",
+      "source_file": "runbooks/stripe-webhook.md",
+      "source_location": "L13"
+    },
+    {
+      "id": "runbooks_stripe_webhook_2_verificar_url_en_stripe_dashboard",
+      "label": "2. Verificar URL en Stripe Dashboard",
+      "file_type": "document",
+      "source_file": "runbooks/stripe-webhook.md",
+      "source_location": "L18"
+    },
+    {
+      "id": "runbooks_stripe_webhook_3_verificar_logs",
+      "label": "3. Verificar logs",
+      "file_type": "document",
+      "source_file": "runbooks/stripe-webhook.md",
+      "source_location": "L22"
+    },
+    {
+      "id": "runbooks_stripe_webhook_resolución",
+      "label": "Resolución",
+      "file_type": "document",
+      "source_file": "runbooks/stripe-webhook.md",
+      "source_location": "L27"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "links": [
+    {
+      "source": "dashboards_easycasual_backend_funnel",
+      "target": "dashboards_easycasual_backend_funnel_annotations",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel_annotations",
+      "target": "dashboards_easycasual_backend_funnel_annotations_list",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel",
+      "target": "dashboards_easycasual_backend_funnel_editable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel",
+      "target": "dashboards_easycasual_backend_funnel_fiscalyearstartmonth",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel",
+      "target": "dashboards_easycasual_backend_funnel_graphtooltip",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel",
+      "target": "dashboards_easycasual_backend_funnel_id",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel",
+      "target": "dashboards_easycasual_backend_funnel_links",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel",
+      "target": "dashboards_easycasual_backend_funnel_livenow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel",
+      "target": "dashboards_easycasual_backend_funnel_panels",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel",
+      "target": "dashboards_easycasual_backend_funnel_refresh",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L506",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel",
+      "target": "dashboards_easycasual_backend_funnel_schemaversion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L507",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel",
+      "target": "dashboards_easycasual_backend_funnel_style",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L508",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel",
+      "target": "dashboards_easycasual_backend_funnel_tags",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L509",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel_tags",
+      "target": "ref_easycasual",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L509",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel_tags",
+      "target": "ref_backend",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L509",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel_tags",
+      "target": "ref_funnel",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L509",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel",
+      "target": "dashboards_easycasual_backend_funnel_templating",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L514",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel_templating",
+      "target": "dashboards_easycasual_backend_funnel_templating_list",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L515",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel",
+      "target": "dashboards_easycasual_backend_funnel_time",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L534",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel_time",
+      "target": "dashboards_easycasual_backend_funnel_time_from",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L535",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel_time",
+      "target": "dashboards_easycasual_backend_funnel_time_to",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L536",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel",
+      "target": "dashboards_easycasual_backend_funnel_timezone",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L538",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel",
+      "target": "dashboards_easycasual_backend_funnel_title",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L539",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel",
+      "target": "dashboards_easycasual_backend_funnel_version",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L540",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_funnel",
+      "target": "dashboards_easycasual_backend_funnel_uid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-funnel.json",
+      "source_location": "L541",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors",
+      "target": "dashboards_easycasual_backend_http_errors_annotations",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors_annotations",
+      "target": "dashboards_easycasual_backend_http_errors_annotations_list",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors",
+      "target": "dashboards_easycasual_backend_http_errors_editable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors",
+      "target": "dashboards_easycasual_backend_http_errors_fiscalyearstartmonth",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors",
+      "target": "dashboards_easycasual_backend_http_errors_graphtooltip",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors",
+      "target": "dashboards_easycasual_backend_http_errors_id",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors",
+      "target": "dashboards_easycasual_backend_http_errors_links",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors",
+      "target": "dashboards_easycasual_backend_http_errors_livenow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors",
+      "target": "dashboards_easycasual_backend_http_errors_panels",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors",
+      "target": "dashboards_easycasual_backend_http_errors_refresh",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L320",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors",
+      "target": "dashboards_easycasual_backend_http_errors_schemaversion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L321",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors",
+      "target": "dashboards_easycasual_backend_http_errors_tags",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L322",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors_tags",
+      "target": "ref_easycasual",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L322",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors_tags",
+      "target": "ref_backend",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L322",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors_tags",
+      "target": "ref_errors",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L322",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors_tags",
+      "target": "ref_prometheus",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L322",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors",
+      "target": "dashboards_easycasual_backend_http_errors_templating",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L328",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors_templating",
+      "target": "dashboards_easycasual_backend_http_errors_templating_list",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L329",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors",
+      "target": "dashboards_easycasual_backend_http_errors_time",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L350",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors_time",
+      "target": "dashboards_easycasual_backend_http_errors_time_from",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L351",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors_time",
+      "target": "dashboards_easycasual_backend_http_errors_time_to",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L352",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors",
+      "target": "dashboards_easycasual_backend_http_errors_timepicker",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L354",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors",
+      "target": "dashboards_easycasual_backend_http_errors_timezone",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L355",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors",
+      "target": "dashboards_easycasual_backend_http_errors_title",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L356",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors",
+      "target": "dashboards_easycasual_backend_http_errors_uid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L357",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors",
+      "target": "dashboards_easycasual_backend_http_errors_version",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L358",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_http_errors",
+      "target": "dashboards_easycasual_backend_http_errors_weekstart",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-http-errors.json",
+      "source_location": "L359",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_infrastructure",
+      "target": "dashboards_easycasual_backend_infrastructure_uid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_infrastructure",
+      "target": "dashboards_easycasual_backend_infrastructure_title",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_infrastructure",
+      "target": "dashboards_easycasual_backend_infrastructure_schemaversion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_infrastructure",
+      "target": "dashboards_easycasual_backend_infrastructure_version",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_infrastructure",
+      "target": "dashboards_easycasual_backend_infrastructure_refresh",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_infrastructure",
+      "target": "dashboards_easycasual_backend_infrastructure_time",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_infrastructure_time",
+      "target": "dashboards_easycasual_backend_infrastructure_time_from",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_infrastructure_time",
+      "target": "dashboards_easycasual_backend_infrastructure_time_to",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_infrastructure",
+      "target": "dashboards_easycasual_backend_infrastructure_timezone",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_infrastructure",
+      "target": "dashboards_easycasual_backend_infrastructure_panels",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_infrastructure",
+      "target": "dashboards_easycasual_backend_infrastructure_templating",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L362",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_backend_infrastructure_templating",
+      "target": "dashboards_easycasual_backend_infrastructure_templating_list",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-backend-infrastructure.json",
+      "source_location": "L363",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge",
+      "target": "dashboards_easycasual_bridge_annotations",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge_annotations",
+      "target": "dashboards_easycasual_bridge_annotations_list",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge",
+      "target": "dashboards_easycasual_bridge_editable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge",
+      "target": "dashboards_easycasual_bridge_fiscalyearstartmonth",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge",
+      "target": "dashboards_easycasual_bridge_graphtooltip",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge",
+      "target": "dashboards_easycasual_bridge_id",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge",
+      "target": "dashboards_easycasual_bridge_links",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge",
+      "target": "dashboards_easycasual_bridge_livenow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge",
+      "target": "dashboards_easycasual_bridge_panels",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge",
+      "target": "dashboards_easycasual_bridge_schemaversion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4310",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge",
+      "target": "dashboards_easycasual_bridge_style",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4311",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge",
+      "target": "dashboards_easycasual_bridge_tags",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4312",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge_tags",
+      "target": "ref_easycasual",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4312",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "dashboards_easycasual_bridge_tags",
+      "target": "ref_bridge",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4312",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "dashboards_easycasual_bridge",
+      "target": "dashboards_easycasual_bridge_templating",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4316",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge_templating",
+      "target": "dashboards_easycasual_bridge_templating_list",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4317",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge",
+      "target": "dashboards_easycasual_bridge_time",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4334",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge_time",
+      "target": "dashboards_easycasual_bridge_time_from",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4335",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge_time",
+      "target": "dashboards_easycasual_bridge_time_to",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4336",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge",
+      "target": "dashboards_easycasual_bridge_timepicker",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4338",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge",
+      "target": "dashboards_easycasual_bridge_timezone",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4339",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge",
+      "target": "dashboards_easycasual_bridge_title",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4340",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge",
+      "target": "dashboards_easycasual_bridge_uid",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4341",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge",
+      "target": "dashboards_easycasual_bridge_version",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4342",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge",
+      "target": "dashboards_easycasual_bridge_weekstart",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4343",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboards_easycasual_bridge",
+      "target": "dashboards_easycasual_bridge_refresh",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dashboards/easycasual-bridge.json",
+      "source_location": "L4344",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_deploy",
+      "target": "users_mariano_fresno_bpf_observability_scripts_deploy_sh__entry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/deploy.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "deploy",
+      "target": "deploy_deployment_guide",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEPLOY.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "deploy_deployment_guide",
+      "target": "deploy_architecture_overview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEPLOY.md",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "deploy_deployment_guide",
+      "target": "deploy_repository_contents",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEPLOY.md",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "deploy_deployment_guide",
+      "target": "deploy_deploying_the_vps_federation_server",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEPLOY.md",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "deploy_deploying_the_vps_federation_server",
+      "target": "deploy_option_1_deploy_script",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEPLOY.md",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "deploy_deploying_the_vps_federation_server",
+      "target": "deploy_option_2_manual_deployment",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEPLOY.md",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "deploy_deployment_guide",
+      "target": "deploy_deploying_the_on_prem_configuration",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEPLOY.md",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "deploy_deployment_guide",
+      "target": "deploy_deploying_grafana_dashboards",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEPLOY.md",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "deploy_deploying_grafana_dashboards",
+      "target": "deploy_setting_up_the_grafana_api_token",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEPLOY.md",
+      "source_location": "L95",
+      "weight": 1.0
+    },
+    {
+      "source": "deploy_deploying_grafana_dashboards",
+      "target": "deploy_manual_dashboard_import",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEPLOY.md",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "deploy_deployment_guide",
+      "target": "deploy_verification",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEPLOY.md",
+      "source_location": "L118",
+      "weight": 1.0
+    },
+    {
+      "source": "deploy_verification",
+      "target": "deploy_verify_the_vps_federation_server",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEPLOY.md",
+      "source_location": "L120",
+      "weight": 1.0
+    },
+    {
+      "source": "deploy_verification",
+      "target": "deploy_verify_the_on_prem_central_prometheus",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEPLOY.md",
+      "source_location": "L144",
+      "weight": 1.0
+    },
+    {
+      "source": "deploy_verification",
+      "target": "deploy_verify_the_grafana_dashboard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEPLOY.md",
+      "source_location": "L159",
+      "weight": 1.0
+    },
+    {
+      "source": "deploy_deployment_guide",
+      "target": "deploy_troubleshooting",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEPLOY.md",
+      "source_location": "L163",
+      "weight": 1.0
+    },
+    {
+      "source": "deploy_troubleshooting",
+      "target": "deploy_federation_target_shows_down_on_the_on_prem_server",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEPLOY.md",
+      "source_location": "L165",
+      "weight": 1.0
+    },
+    {
+      "source": "deploy_troubleshooting",
+      "target": "deploy_dashboard_not_updating",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEPLOY.md",
+      "source_location": "L181",
+      "weight": 1.0
+    },
+    {
+      "source": "deploy_troubleshooting",
+      "target": "deploy_no_metrics_but_targets_are_up",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DEPLOY.md",
+      "source_location": "L185",
+      "weight": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "readme_bpf_observability",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_bpf_observability",
+      "target": "readme_contents",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_bpf_observability",
+      "target": "readme_architecture",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_bpf_observability",
+      "target": "readme_setup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_setup",
+      "target": "readme_grafana",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_setup",
+      "target": "readme_prometheus",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_bpf_observability",
+      "target": "readme_dashboards",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_dashboards",
+      "target": "readme_easycasual_group_messages_bridge",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_dashboards",
+      "target": "readme_easycasual_backend_funnel_product_metrics",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_dashboards",
+      "target": "readme_easycasual_backend_http_errors",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L78",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_architecture",
+      "target": "docs_architecture_observability_architecture",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_architecture_observability_architecture",
+      "target": "docs_architecture_components",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_architecture_observability_architecture",
+      "target": "docs_architecture_data_flow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_architecture_observability_architecture",
+      "target": "docs_architecture_rathole_bidirectional_tunnel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_architecture_rathole_bidirectional_tunnel",
+      "target": "docs_architecture_service_details",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_architecture_observability_architecture",
+      "target": "docs_architecture_prometheus_federation_server_cloud_server",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L83",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_architecture_prometheus_federation_server_cloud_server",
+      "target": "docs_architecture_configuration",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L92",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_architecture_prometheus_federation_server_cloud_server",
+      "target": "docs_architecture_docker_compose_flags",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L112",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_architecture_observability_architecture",
+      "target": "docs_architecture_central_prometheus_on_prem_server",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L126",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_architecture_observability_architecture",
+      "target": "docs_architecture_grafana",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L142",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_architecture_observability_architecture",
+      "target": "docs_architecture_why_federation_over_remote_write",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L148",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_down",
+      "target": "runbooks_backend_down_backend_down",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-down.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_down_backend_down",
+      "target": "runbooks_backend_down_impacto",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-down.md",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_down_backend_down",
+      "target": "runbooks_backend_down_diagnóstico_inmediato",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-down.md",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_down_diagnóstico_inmediato",
+      "target": "runbooks_backend_down_1_verificar_container",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-down.md",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_down_diagnóstico_inmediato",
+      "target": "runbooks_backend_down_2_verificar_dependencias",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-down.md",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_down_diagnóstico_inmediato",
+      "target": "runbooks_backend_down_3_verificar_sistema",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-down.md",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_down_backend_down",
+      "target": "runbooks_backend_down_resolución_por_causa",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-down.md",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_down_backend_down",
+      "target": "runbooks_backend_down_procedimiento_de_emergencia",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-down.md",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_down_backend_down",
+      "target": "runbooks_backend_down_prevención",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-down.md",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_errors",
+      "target": "runbooks_backend_errors_backend_5xx_error_rate_5",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-errors.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_errors_backend_5xx_error_rate_5",
+      "target": "runbooks_backend_errors_impacto",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-errors.md",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_errors_backend_5xx_error_rate_5",
+      "target": "runbooks_backend_errors_diagnóstico",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-errors.md",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_errors_diagnóstico",
+      "target": "runbooks_backend_errors_1_verificar_errores_por_ruta",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-errors.md",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_errors_diagnóstico",
+      "target": "runbooks_backend_errors_2_verificar_logs_del_backend",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-errors.md",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_errors_diagnóstico",
+      "target": "runbooks_backend_errors_3_verificar_dependencias",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-errors.md",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_errors_diagnóstico",
+      "target": "runbooks_backend_errors_4_verificar_métricas_en_vivo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-errors.md",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_errors_backend_5xx_error_rate_5",
+      "target": "runbooks_backend_errors_escenarios_y_resolución",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-errors.md",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_errors_backend_5xx_error_rate_5",
+      "target": "runbooks_backend_errors_prevención",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-errors.md",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_latency",
+      "target": "runbooks_backend_latency_backend_high_latency_p95_5s",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-latency.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_latency_backend_high_latency_p95_5s",
+      "target": "runbooks_backend_latency_impacto",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-latency.md",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_latency_backend_high_latency_p95_5s",
+      "target": "runbooks_backend_latency_causas_comunes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-latency.md",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_latency_backend_high_latency_p95_5s",
+      "target": "runbooks_backend_latency_diagnóstico",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-latency.md",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_latency_diagnóstico",
+      "target": "runbooks_backend_latency_1_verificar_dashboard_de_infra",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-latency.md",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_latency_diagnóstico",
+      "target": "runbooks_backend_latency_2_verificar_métricas_en_vivo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-latency.md",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_latency_diagnóstico",
+      "target": "runbooks_backend_latency_3_verificar_database",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-latency.md",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_latency_diagnóstico",
+      "target": "runbooks_backend_latency_4_verificar_recursos_del_sistema",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-latency.md",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_latency_backend_high_latency_p95_5s",
+      "target": "runbooks_backend_latency_resolución",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-latency.md",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_backend_latency_backend_high_latency_p95_5s",
+      "target": "runbooks_backend_latency_prevención",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/backend-latency.md",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_bridge_down",
+      "target": "runbooks_bridge_down_bridge_down",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/bridge-down.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_bridge_down_bridge_down",
+      "target": "runbooks_bridge_down_impacto",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/bridge-down.md",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_bridge_down_bridge_down",
+      "target": "runbooks_bridge_down_diagnóstico_rápido",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/bridge-down.md",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_bridge_down_diagnóstico_rápido",
+      "target": "runbooks_bridge_down_1_verificar_estado_del_container",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/bridge-down.md",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_bridge_down_diagnóstico_rápido",
+      "target": "runbooks_bridge_down_2_ver_logs_del_container",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/bridge-down.md",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_bridge_down_diagnóstico_rápido",
+      "target": "runbooks_bridge_down_3_intentar_ping_al_endpoint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/bridge-down.md",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_bridge_down_bridge_down",
+      "target": "runbooks_bridge_down_escenarios_comunes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/bridge-down.md",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_bridge_down_bridge_down",
+      "target": "runbooks_bridge_down_recuperación",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/bridge-down.md",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_bridge_down_bridge_down",
+      "target": "runbooks_bridge_down_si_el_problema_persiste",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/bridge-down.md",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_bridge_latency",
+      "target": "runbooks_bridge_latency_high_bridge_latency",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/bridge-latency.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_bridge_latency_high_bridge_latency",
+      "target": "runbooks_bridge_latency_qué_es",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/bridge-latency.md",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_bridge_latency_high_bridge_latency",
+      "target": "runbooks_bridge_latency_causas_comunes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/bridge-latency.md",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_bridge_latency_high_bridge_latency",
+      "target": "runbooks_bridge_latency_pasos_para_diagnosticar",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/bridge-latency.md",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_bridge_latency_pasos_para_diagnosticar",
+      "target": "runbooks_bridge_latency_1_verificar_dashboard_del_bridge",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/bridge-latency.md",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_bridge_latency_pasos_para_diagnosticar",
+      "target": "runbooks_bridge_latency_2_verificar_correlación_con_backend",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/bridge-latency.md",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_bridge_latency_pasos_para_diagnosticar",
+      "target": "runbooks_bridge_latency_3_verificar_recursos_del_container",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/bridge-latency.md",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_bridge_latency_high_bridge_latency",
+      "target": "runbooks_bridge_latency_resolución",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/bridge-latency.md",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_bridge_latency_high_bridge_latency",
+      "target": "runbooks_bridge_latency_prevención",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/bridge-latency.md",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_empty_search",
+      "target": "runbooks_empty_search_high_empty_search_rate_30",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/empty-search.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_empty_search_high_empty_search_rate_30",
+      "target": "runbooks_empty_search_impacto",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/empty-search.md",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_empty_search_high_empty_search_rate_30",
+      "target": "runbooks_empty_search_causas_comunes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/empty-search.md",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_empty_search_high_empty_search_rate_30",
+      "target": "runbooks_empty_search_diagnóstico",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/empty-search.md",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_empty_search_diagnóstico",
+      "target": "runbooks_empty_search_1_verificar_tasa_vs_histórico",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/empty-search.md",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_empty_search_diagnóstico",
+      "target": "runbooks_empty_search_2_verificar_data_freshness",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/empty-search.md",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_empty_search_diagnóstico",
+      "target": "runbooks_empty_search_3_verificar_logs_del_backend",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/empty-search.md",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_empty_search_high_empty_search_rate_30",
+      "target": "runbooks_empty_search_resolución",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/empty-search.md",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_empty_search_high_empty_search_rate_30",
+      "target": "runbooks_empty_search_prevención",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/empty-search.md",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_moderation_spike",
+      "target": "runbooks_moderation_spike_high_report_volume_moderation_spike",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/moderation-spike.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_moderation_spike_high_report_volume_moderation_spike",
+      "target": "runbooks_moderation_spike_impacto",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/moderation-spike.md",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_moderation_spike_high_report_volume_moderation_spike",
+      "target": "runbooks_moderation_spike_causas_comunes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/moderation-spike.md",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_moderation_spike_high_report_volume_moderation_spike",
+      "target": "runbooks_moderation_spike_diagnóstico",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/moderation-spike.md",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_moderation_spike_diagnóstico",
+      "target": "runbooks_moderation_spike_1_verificar_tipo_de_reports",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/moderation-spike.md",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_moderation_spike_diagnóstico",
+      "target": "runbooks_moderation_spike_2_verificar_dashboard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/moderation-spike.md",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_moderation_spike_diagnóstico",
+      "target": "runbooks_moderation_spike_3_verificar_fuentes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/moderation-spike.md",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_moderation_spike_high_report_volume_moderation_spike",
+      "target": "runbooks_moderation_spike_resolución",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/moderation-spike.md",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_moderation_spike_high_report_volume_moderation_spike",
+      "target": "runbooks_moderation_spike_prevención",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/moderation-spike.md",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_payment_errors",
+      "target": "runbooks_payment_errors_payment_checkout_errors",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/payment-errors.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_payment_errors_payment_checkout_errors",
+      "target": "runbooks_payment_errors_impacto",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/payment-errors.md",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_payment_errors_payment_checkout_errors",
+      "target": "runbooks_payment_errors_diagnóstico",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/payment-errors.md",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_payment_errors_diagnóstico",
+      "target": "runbooks_payment_errors_1_verificar_stripe_status",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/payment-errors.md",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_payment_errors_diagnóstico",
+      "target": "runbooks_payment_errors_2_verificar_configuración_de_stripe",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/payment-errors.md",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_payment_errors_diagnóstico",
+      "target": "runbooks_payment_errors_3_verificar_tipos_de_error",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/payment-errors.md",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_payment_errors_payment_checkout_errors",
+      "target": "runbooks_payment_errors_escenarios_comunes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/payment-errors.md",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_payment_errors_payment_checkout_errors",
+      "target": "runbooks_payment_errors_resolución",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/payment-errors.md",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_payment_errors_payment_checkout_errors",
+      "target": "runbooks_payment_errors_prevención",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/payment-errors.md",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_stripe_webhook",
+      "target": "runbooks_stripe_webhook_stripe_webhook_failures",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/stripe-webhook.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_stripe_webhook_stripe_webhook_failures",
+      "target": "runbooks_stripe_webhook_impacto",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/stripe-webhook.md",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_stripe_webhook_stripe_webhook_failures",
+      "target": "runbooks_stripe_webhook_diagnóstico",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/stripe-webhook.md",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_stripe_webhook_diagnóstico",
+      "target": "runbooks_stripe_webhook_1_verificar_secreto_de_webhook",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/stripe-webhook.md",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_stripe_webhook_diagnóstico",
+      "target": "runbooks_stripe_webhook_2_verificar_url_en_stripe_dashboard",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/stripe-webhook.md",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_stripe_webhook_diagnóstico",
+      "target": "runbooks_stripe_webhook_3_verificar_logs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/stripe-webhook.md",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "runbooks_stripe_webhook_stripe_webhook_failures",
+      "target": "runbooks_stripe_webhook_resolución",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "runbooks/stripe-webhook.md",
+      "source_location": "L27",
+      "weight": 1.0
+    }
+  ]
+}
