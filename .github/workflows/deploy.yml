@@ -1,4 +1,4 @@
-name: Deploy
+name: CI / CD
 
 on:
   push:
@@ -6,15 +6,67 @@ on:
     paths:
       - 'dashboards/**'
       - 'prometheus/**'
+      - 'alertmanager/**'
+      - 'scripts/**'
+      - '.github/workflows/deploy.yml'
+  pull_request:
+    branches: ['**']
+    paths:
+      - 'dashboards/**'
+      - 'prometheus/**'
+      - 'alertmanager/**'
       - 'scripts/**'
       - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
-env:
-  GRAFANA_URL: https://grafana-ai.fresno.ar
-
 jobs:
+  validate:
+    name: Validate Configurations
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - id: filter
+        uses: dorny/paths-filter@v3
+        with:
+          filters: |
+            prometheus:
+              - 'prometheus/**'
+            alertmanager:
+              - 'alertmanager/**'
+            dashboards:
+              - 'dashboards/**'
+
+      - name: Validate Prometheus Configuration
+        if: steps.filter.outputs.prometheus == 'true'
+        run: |
+          echo "Validating prometheus.yml..."
+          docker run --rm --entrypoint promtool -v ${{ github.workspace }}/prometheus:/prometheus prom/prometheus check config /prometheus/prometheus.yml
+          echo "Validating alerts.yml..."
+          docker run --rm --entrypoint promtool -v ${{ github.workspace }}/prometheus:/prometheus prom/prometheus check rules /prometheus/alerts.yml
+
+      - name: Validate Alertmanager Configuration
+        if: steps.filter.outputs.alertmanager == 'true'
+        run: |
+          echo "Validating alertmanager.yml..."
+          # Substitute env variable placeholders with dummy values for syntax testing
+          sed -e 's/\$[{]TELEGRAM_BOT_TOKEN[}]/123456:ABC/g' -e 's/\$[{]TELEGRAM_CHAT_ID[}]/123456789/g' alertmanager/alertmanager.yml > alertmanager/alertmanager.temp.yml
+          docker run --rm --entrypoint amtool -v ${{ github.workspace }}/alertmanager:/alertmanager prom/alertmanager check-config /alertmanager/alertmanager.temp.yml
+          rm alertmanager/alertmanager.temp.yml
+
+      - name: Validate Grafana Dashboards JSON
+        if: steps.filter.outputs.dashboards == 'true'
+        run: |
+          echo "Checking JSON syntax for Grafana dashboards..."
+          for f in dashboards/*.json; do
+            [ -f "$f" ] || continue
+            jq '.' "$f" > /dev/null
+          done
+
   deploy-dashboards:
+    name: Deploy Dashboards
+    needs: validate
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
     runs-on: ubuntu-latest
 
     steps:
@@ -24,7 +76,9 @@ jobs:
         id: folder
         env:
           GH_TOKEN: ${{ secrets.GRAFANA_API_TOKEN }}
+          GRAFANA_URL: ${{ vars.GRAFANA_URL || 'https://grafana.easycasual.app' }}
         run: |
+          # shellcheck disable=SC2016
           # The EasyCasual folder is created here if it does not exist.
           # Using -k because of SSL issues with the internal Grafana URL.
           RESPONSE=$(curl -s -k -H "Authorization: Bearer $GH_TOKEN" "$GRAFANA_URL/api/folders")
@@ -57,7 +111,9 @@ jobs:
       - name: Import dashboards
         env:
           GH_TOKEN: ${{ secrets.GRAFANA_API_TOKEN }}
+          GRAFANA_URL: ${{ vars.GRAFANA_URL || 'https://grafana.easycasual.app' }}
         run: |
+          # shellcheck disable=SC2016
           for f in dashboards/*.json; do
             [ -f "$f" ] || continue
             echo "Importing $(basename "$f")..."
@@ -73,7 +129,3 @@ jobs:
               -d "$PAYLOAD" \
               "$GRAFANA_URL/api/dashboards/db" | jq -r '"Result: \(.message // "OK")"'
           done
-
-# Alert rules in prometheus/ are NOT deployed by this workflow.
-# They require file-based provisioning on the Prometheus server.
-# Deploy them via a cron job or manual sync to the Prometheus host.
