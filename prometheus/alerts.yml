@@ -21,6 +21,16 @@ groups:
           description: "Prometheus cannot scrape the group-messages-bridge service."
           runbook_url: "https://github.com/bpf-project/bpf-observability/blob/main/runbooks/bridge-down.md"
 
+      - alert: SourceDisconnected
+        expr: bridge_connected_status == 0
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Bridge ingestion source '{{ $labels.source }}' is disconnected/failing"
+          description: "Ingestion source '{{ $labels.source }}' has a status of 0 (disconnected or failing last sync) for more than 5 minutes."
+          runbook_url: "https://github.com/bpf-project/bpf-observability/blob/main/runbooks/source-disconnected.md"
+
   - name: EasyCasualBackendAlerts
     rules:
       - alert: BackendDown
